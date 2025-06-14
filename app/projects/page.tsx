@@ -1,12 +1,20 @@
 export default function ProjectsPage() {
+  const projects = [
+    { title: 'Task Manager API', description: 'ASP.NET Core Web API with JWT auth' },
+    { title: 'MVC Blog', description: 'A simple blogging platform built with ASP.NET MVC' },
+    { title: 'Real-time Chat', description: 'SignalR powered chat application' },
+  ];
+
   return (
-    <section className="py-8 md:py-10">
-      <h1 className="text-3xl font-bold mb-4">Projects</h1>
-      <p className="text-lg">Here are a few of my favorite side projects.</p>
-      <ul className="list-disc list-inside mt-4 space-y-2">
-        <li>Sample Project One</li>
-        <li>Sample Project Two</li>
-        <li>Sample Project Three</li>
+    <section className="space-y-6 py-16">
+      <h1 className="text-3xl font-bold">Projects</h1>
+      <ul className="space-y-4">
+        {projects.map((p) => (
+          <li key={p.title} className="border p-4 rounded-md shadow">
+            <h2 className="text-xl font-semibold">{p.title}</h2>
+            <p>{p.description}</p>
+          </li>
+        ))}
       </ul>
     </section>
   );

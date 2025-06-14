@@ -1,11 +1,10 @@
-export default function Home() {
+export default function HomePage() {
   return (
-    <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
-      <h1 className="text-4xl font-bold">Welcome to my portfolio</h1>
-      <p className="text-lg text-center max-w-xl">
-        I'm building this site with Next.js. Check out my projects and feel free to get in touch!
+    <section className="text-center py-16 space-y-6">
+      <h1 className="text-5xl font-bold">Hi, I'm a .NET Developer</h1>
+      <p className="text-xl max-w-2xl mx-auto">
+        Welcome to my portfolio built with Next.js. Here you'll find examples of my C# and .NET work.
       </p>
     </section>
   );
 }
-

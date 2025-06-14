@@ -1,9 +1,16 @@
 export default function ContactPage() {
   return (
-    <section className="py-8 md:py-10">
-      <h1 className="text-3xl font-bold mb-4">Contact Me</h1>
-      <p className="text-lg mb-2">Feel free to reach out via email:</p>
-      <a href="mailto:example@example.com" className="text-primary underline">example@example.com</a>
+    <section className="py-16 space-y-4">
+      <h1 className="text-3xl font-bold">Get in Touch</h1>
+      <p>
+        Feel free to reach out if you'd like to discuss a project or just want to connect.
+      </p>
+      <a
+        className="text-blue-600 underline"
+        href="mailto:developer@example.com"
+      >
+        developer@example.com
+      </a>
     </section>
   );
 }
